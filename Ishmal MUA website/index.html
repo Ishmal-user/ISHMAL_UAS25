@@ -1,0 +1,187 @@
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ishmal Kaur - Portofolio</title>
+
+    <!-- Google Fonts untuk styling yang canggih -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+    <!-- Tautan ke file CSS eksternal -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <header class="header">
+      <div class="container navbar">
+        <a href="#home" class="logo">ISHMAL KAUR</a>
+
+        <nav class="nav-links">
+          <a href="#home">home</a>
+          <a href="#about">About Me</a>
+          <a href="#services">Projects</a>
+          <a href="#contact" class="contact-btn">Contact</a>
+        </nav>
+
+        <!-- Tombol Menu Mobile (Hamburger) -->
+        <button id="mobile-menu-button" class="mobile-menu-button">
+          <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+        </button>
+      </div>
+
+      <!-- Menu Mobile -->
+      <div id="mobile-menu" class="mobile-menu">
+        <a href="#about">Tentang Saya</a>
+        <a href="#services">Layanan</a>
+        <a href="#portfolio">Portofolio</a>
+        <a href="#contact">Hubungi Saya</a>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="jumbotron container">
+        <div class="hero-content">
+          <!-- Placeholder Foto Profil -->
+          <div class="hero-overlay"></div>
+          <img src="image/image/imgishmal2.JPG" alt="Foto Profil Ishmal Kaur" class="hero-profile-image" />
+          <p class="hero-subtitle">Mahasiswa UPH | Beauty Enthusiast</p>
+          <h1 class="hero-title">Ishmal Kaur</h1>
+          <p class="hero-sub">Mahasiswa UPH | Beauty Enthusiast</p>
+          <a href="#contact" class="contact-btn">CONTACT ME</a>
+        </div>
+      </section>
+
+      <!-- Bagian About -->
+      <section id="about" class="section-padding container">
+        <div class="about-grid">
+          <!-- Sisi Gambar -->
+          <div class="about-image shadow-soft">
+            <img src="image/image/ishmal 3.JPG" alt="Potret Profesional Ishmal Kaur" />
+          </div>
+          <!-- Sisi Teks -->
+          <div class="about-content">
+            <h4>MY STORY</h4>
+            <h2>Meet Ishmal</h2>
+            <p class="paragraph">
+              Hi! I'm Ishmal Kaur, a UPH student passionate about combining aesthetics (UI/UX design) and functionality to build simple and elegant websites. A passionate makeup artist with a vision to enhance your natural elegance. My goal
+              is to make every client feel radiant and confident.
+            </p>
+            <p class="paragraph">A passionate makeup artist with a vision to enhance your natural elegance. My goal is to make every client feel radiant and confident.</p>
+            <a href="#contact" class="about-link"> READ MORE & CONTACT US </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Layanan -->
+      <section id="services" class="section-padding bg-light">
+        <div class="container">
+          <h2 class="section-heading">Projects</h2>
+          <div class="grid-3-col">
+            <!-- Layanan 1: Pengantin -->
+            <div class="card shadow-soft">
+              <img src="image/image/bridal image.jpeg" alt="Bridal Makeup" />
+              <h3>Bridal Makeup</h3>
+              <p>Full day service, custom look development, and touch-up supplies are included.</p>
+              <a href="#contact" class="card-link">CONTACT ME &rarr;</a>
+            </div>
+            <!-- Layanan 2: Editorial -->
+            <div class="card shadow-soft">
+              <img src="image/image/Editorial makeup_.avif" alt="Editorial Makeup" />
+              <h3>Editorial Makeup</h3>
+              <p>Half day or full day rates for photo shoots, films and commercial work.</p>
+              <a href="#contact" class="card-link">CONTACT ME &rarr;</a>
+            </div>
+            <!-- Layanan 3: Pelajaran -->
+            <div class="card shadow-soft">
+              <img src="image/image/One to one makeup.png" alt="Layanan Pelajaran" />
+              <h3>1:1 MASTERCLASS</h3>
+              <p>Personalized lessons to master your own features and techniques.</p>
+              <a href="#contact" class="card-link">CONTACT ME &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Bagian Hubungi Saya (Formulir Jumbotron) -->
+      <section id="contact" class="section-padding container contact-jumbotron">
+        <h2 class="section-heading">Contact Me</h2>
+        <p class="section-subheading" style="margin-bottom: 2rem">Ready to book for your perfect look? Fill out the form below to check my availability and receive a special offer.</p>
+
+        <div class="form-wrapper shadow-soft">
+          <form id="inquiryForm" class="contact-form">
+            <!-- Nama Lengkap -->
+            <div class="form-group">
+              <label for="fullName">FULL NAME *</label>
+              <input type="text" id="fullName" name="fullName" required placeholder="Jane Doe" />
+            </div>
+            <!-- Alamat Email -->
+            <div class="form-group">
+              <label for="email">EMAIL ADDRESS *</label>
+              <input type="email" id="email" name="email" required placeholder="hello@example.com" />
+            </div>
+            <!-- Jenis Layanan -->
+            <div class="form-group">
+              <label for="serviceType">TYPE OF SERVICE*</label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">CHOOSE SERVICE</option>
+                <option value="bridal">BRIDAL MAKEUP</option>
+                <option value="editorial">EDITORIAL MAKEUP</option>
+                <option value="lesson">1:1 MASTERCLASS</option>
+              </select>
+            </div>
+            <!-- Tanggal Pilihan -->
+            <div class="form-group">
+              <label for="preferredDate">DATE *</label>
+              <input type="date" id="preferredDate" name="preferredDate" required />
+            </div>
+            <!-- Lokasi -->
+            <div class="form-group">
+              <label for="location">CITY LOCATION *</label>
+              <input type="text" id="location" name="location" required placeholder="London, UK or Wedding Location" />
+            </div>
+            <!-- Total Aplikasi -->
+            <div class="form-group">
+              <label for="applications">TOTAL MAKEUP APPLICATIONSN</label>
+              <input type="number" id="applications" name="applications" placeholder="example: 4" min="1" />
+            </div>
+            <!-- Visi/Detail (Lebar Penuh) -->
+            <div class="form-group full-width-input">
+              <label for="vision"> TELL US ABOUT YOUR LOOK</label>
+              <textarea id="vision" name="vision" rows="4" placeholder="Describe the look you want, the time of the event, and any other special requests."></textarea>
+            </div>
+            <!-- Tombol Kirim -->
+            <div class="submit-container">
+              <button type="submit" class="submit-button">SEND QUESTION</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal Pesan Sukses (Disembunyikan secara default) -->
+    <div id="successMessage" class="modal-overlay" style="display: none">
+      <div class="modal-content">
+        <h3>Message sent!</h3>
+        <p>Thank you, your message has been successfully received. Ishmal will contact you soon to discuss your perfect look.!</p>
+        <button onclick="closeModal()" class="modal-close-btn">Tutup</button>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <h3 class="footer-logo">ISHMAL KAUR</h3>
+        <div class="social-links">
+          <a href="#">Instagram</a>
+          <a href="#">Email</a>
+          <a href="#">Service</a>
+        </div>
+        <p class="copyright">&copy;2025 Ishmal Kaur Makeup Artistry. All Rights Reserved. | Designed with Elegance</p>
+      </div>
+    </footer>
+
+    <!-- Tautan ke file JavaScript eksternal -->
+    <script src="script.js" defer></script>
+  </body>
+</html>
